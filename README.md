@@ -19,6 +19,8 @@ WSL配置
 WSL下的 qemu 配置过程
 ----------------------
 
+下列过程都在WSL环境下执行(win+R，输入 bash 即可进入WSL环境)
+
 - 首先执行 `sudo apt update`
 - 之后依次执行下列操作
 ```shell
