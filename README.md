@@ -1,13 +1,18 @@
 OS Lab1 WSL配置
 ====================
 
-WSL(Windows Subsystem for Linux)配置
+WSL(Windows Subsystem for Linux)简介
+----------------------
+[维基百科](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux)
+
+
+WSL配置
 ----------------------
 
 - 在开始菜单输入 windows feature 打开启用或关闭 windows 功能
-- 滑动滚动条到最后，点击适用于 Linux 的 windows 子系统
+- 滑动滚动条到最后，将适用于 Linux 的 windows 子系统选项打勾
 - 确定后会提示重启系统，重启即可
-- 从![](https://aka.ms/wsl-ubuntu-1604)下载 ubuntu16.04 安装包，不要双击打开，解压到一个固定的目录下，注意该目录就是 linux 根目录所在目录，固定后就不能移动或删除了
+- 从[这里](https://aka.ms/wsl-ubuntu-1604)下载 ubuntu16.04 安装包，不要双击打开，解压到一个固定的目录下，注意该目录就是 linux 根目录所在目录，固定后就不能移动或删除了
 - 解压后，**以管理员权限**打开 ubuntu.exe 即可完成 WSL 的安装，之后就是设置用户名和密码
 - 安装后想要使用 WSL，可以直接使用 win+R，输入 bash，或者在 cmd 里输入 bash 即可运行 WSL
 
