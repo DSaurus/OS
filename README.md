@@ -42,7 +42,7 @@ WSL下的 lab1 配置过程
 - 首先打开lab1的目录（/src/lab1_1)，进入conf目录，用文本编辑器打开 env.mk，修改最后一行为 QEMU=/usr/local/qemu/bin/qemu-system-i386 (整个一行不要有额外的空格，#为注释标记，要去掉)
 - 在WSL下进入lab1的目录，执行`make qemu-nox`，如果以上步骤正确的话，会看到qemu的输出
 - 如何退出qemu: `ctrl+A x` 
-- **以后所有的指令 x 都要用 `make-x-nox` 或者 `make-x-nox-gdb` **
+- 以后所有的指令 x 都要用 `make-x-nox` 或者 `make-x-nox-gdb`
 其他问题
 ---------------------
 建议不要在windows目录下，对该目录使用git进行操作，最好在WSL环境下使用git
