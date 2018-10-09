@@ -33,7 +33,11 @@ sudo apt install libsdl-dev -y
 ```
 
 - 接下来要配置 qemu 了，首先从操作系统官网上下载 lab1 的压缩包，里面包含 resource, src, doc。 然后需要进入 qemu 目录。
-- windows 下和 linux 下目录的对应关系是：c:\xxx\yyy -> /mnt/c/xxx/yyy, /home/<user> -> <wsl_install_directory>/rootfs/home/<user>。 按照这个对应关系，可以使用 `cd` 命令找到并进入qemu目录。
+- windows 下和 linux 下目录的对应关系如下。按照这个对应关系，可以使用 `cd` 命令找到并进入qemu目录。
+  ```
+   C:\ 对应 Linux 下的 /mnt/c/ ， 其他同理
+   Linux 下的 / 对应 <WSL安装目录>/rootfs/
+  ```
 - 在 qemu 目录下执行 `./configure --disable-kvm --disable-werror --prefix=/usr/local/qemu --target-list="i386-softmmu x86_64-softmmu"`
 - 如果一切正确，就可以执行`make`指令，之后执行`sudo make install`指令，配置结束。
 
